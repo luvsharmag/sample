@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body align="center">
+    <h1>turn on and off the bulb</h1>
+    <script>
+        function light(sw){
+            var pic;
+            if(sw==1){
+                pic="https://www.w3schools.com/html/pic_bulbon.gif"
+            }else{
+                pic="https://www.w3schools.com/html/pic_bulboff.gif"
+            }
+            document.getElementById("bulb").src=pic;
+        }
+    </script>
+    <img id="bulb" src="https://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180"><br>    
+    <button type="button" onclick="light(1)">Light on</button>
+    <button type="button" onclick="light(0)">Light off</button>
+<noscript>If browser does not support javascript this will call</noscript>
+</body>
+</html>
